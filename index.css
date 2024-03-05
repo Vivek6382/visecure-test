@@ -1,8 +1,24 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
+
+body {
+    background: #f5f5f5;
+}
 .header{
     background-image: linear-gradient(rgba(25, 26, 43, 0.9), rgba(25, 26, 43, 0.9)),url('https://selfkey.org/wp-content/uploads/2019/07/selfkey-bank-accounts-marketplace-1536x1040.jpg');
     background-position: center;
     background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
 }
 
 /* Contact_US */
@@ -11,25 +27,22 @@
     background: #ffffff;
 }
 .contactUs{
-    position: relative;
-    width: 100%;
-    padding: 40px 100px;
+    padding: 40px 10%;
 }
 
 .C_title h4{
     display: inline-block;
     padding: 20px;
     color: #000000;
-    font-size: 50px;
+    font-size: 2em;
     font-weight: 500;
     letter-spacing: 1.2px;
-    word-spacing: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
     text-transform: uppercase;
-    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     margin-top: 4.5%;
-    margin-left: 37%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 /* .contactUs .title{
@@ -290,3 +303,23 @@
     }
 }
 /* Contact_US_End */
+@media (max-width: 991px) {
+    body {
+        background: #03a9f5;
+    }
+
+    .contactUs {
+        padding: 20px;
+    }
+
+    .box {
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+
+    .map {
+        min-height: 300px;
+    }
+}
