@@ -29,3 +29,14 @@ form.addEventListener("submit", (e) => {
 
 // Contact_Us_End
 
+
+
+// function for tranform the side menu
+
+function openMenu() {
+    document.getElementById('mobile-menu').style.display = 'block';
+}
+
+function closeMenu() {
+    document.getElementById('mobile-menu').style.display = 'none';
+}
