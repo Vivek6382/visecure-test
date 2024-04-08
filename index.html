@@ -1,291 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visecure</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
-  <body>
-    <div class="bg-white header">
-      <header class="absolute inset-x-0 top-0 z-50">
-        <nav class="flex items-center justify-between p-6 lg:px-8"
-          aria-label="Global">
-          <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img class="h-auto w-[90px]" src="logo_white.png" alt>
-            </a>
-          </div>
-          <div class="flex lg:hidden">
-            <button type="button"
-              onclick="document.getElementById('mobile-menu').style.display = 'block';"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
-              <span class="sr-only">Open main menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </button>
-          </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#"
-              class="text-sm font-semibold leading-6 text-slate-200 hover:text-blue-300">Home</a>
-            <a href="#about"
-              class="text-sm font-semibold leading-6 text-slate-200 hover:text-blue-300">About Us</a>
-            <a href="#prod"
-              class="text-sm font-semibold leading-6 text-slate-200 hover:text-blue-300">Product</a>
-            <a href="#serv"
-              class="text-sm font-semibold leading-6 text-slate-200 hover:text-blue-300">Services</a>
-              <a href="#contact_us"
-              class="text-sm font-semibold leading-6 text-slate-200 hover:text-blue-300">Contact Us</a>
-          </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#contact_us"
-              class="text-sm font-semibold leading-6 text-gray-900 text-slate-300 hover:text-blue-300">Reserve Now <span
-                aria-hidden="true">&rarr;</span></a>
-          </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.css">
+
+
+</head>
+<body>  
+<!-- Responsive_Nav_Bar -->
+    <div class="header-1">
+
+        <!-- <a href="#" class="logo-1">Visecure</a> -->
+        <div class="Vi-logo">
+            <img src="assets/visecure-logo.png" alt="Visecure">
+        </div>
+       
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+
+            <div class="NB">
+            <a href="#home" class="active link" style="--i:0;">Home</a>
+            <a href="#about_us" class="link" style="--i:1;">About Us</a>
+            <a href="#services" class="link" style="--i:3;">Services</a>
+            <a href="#contact_us" class="link" style="--i:4;">Contact Us</a>
+            </div>
+            
+            <div class="RES">
+                <a href="#home" class="R_btn"  style="--i:5;">Reserve Now</a>
+            </div>
         </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div id="mobile-menu" class="hidden" role="dialog" aria-modal="true">
-          <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-50"></div>
-          <div
-            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="visecure_logo.png" alt>
-              </a>
-              <button type="button"
-                onclick="document.getElementById('mobile-menu').style.display = 'none';"
-                class="-m-2.5 rounded-md p-2.5 text-black">
-                <span class="sr-only">Close menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                  stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 py-6">
-                  <a href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-                  <a href="#about"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About US</a>
-                  <a href="#prod"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-                  <a href="#serv"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
-                    <a href="#contact_us"
-                      class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact US</a>
+
+        
+    </div>
+
+<!-- Responsive_Nav_Bar_End -->
+
+<!-- Home_Page -->
+<section id="home" class="header" id="header">
+
+    <div class="N_content">
+        <h1 class="anim"><span class="ex_title">Visecure!</span><br>Securing Your Digital Life</h1>
+        <p class="anim">Empowering Digital Fortresses: Safeguarding Your Digital Existence Through Cybersecurity and Blockchain Innovations.</p>
+        <a href="#home" class="N_btn anim">Join Now</a>
+    </div>
+    <img src="https://i.ibb.co/qDwC9HQ/user.png" class="feature-img anim">
+</section>
+<!-- Home_Page_End -->
+
+
+<!-- About_Us -->
+<section id="about_us" class="A_container">
+
+    <div class="A_title">
+        <h4>About Us</h4>
+    </div>
+
+    <div class="container-fluid A_innerContainer">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="A_card">
+                    <img src="/assets/About-1.jpg" alt="img" class="img-fluid" data-aos="fade-left" data-aos-duration="500" data-aos-once="true" data-aos-easing>
+                    <div class="A_content" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                        <h3>Trust Visecure for Your Digital Safety</h3>
+                        <p>Visecure prioritizes empowering users with essential tools for safe digital navigation. Our expert team crafts state-of-the-art security solutions, blending advanced threat detection with user-friendly features. Trust us to safeguard your digital journey with confidence.</p>
+                        <button class="btn btn-primary">More</button>
+                    </div>
                 </div>
-                <div class="py-6">
-                  <a href="#contact_us"
-                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Reserve Now</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="A_card  A_card-2">
+                    <div class="A_content" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                        <h3>Empowering Digital Guardians</h3>
+                        <p>Forge ahead with confidence. Our advanced security solutions guarantee seamless protection, empowering you to navigate the digital realm fearlessly. Your safety, our priority.</p>
+                        <button class="btn btn-primary">More</button>
+                    </div>
+                    <img src="https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041848.jpg?t=st=1709516216~exp=1709519816~hmac=e68b072f791b551988400fd62bf04ea8899ec254cfce3ac82e45910ed357338e&w=740" alt="img" class="img-fluid" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </header>
+    </div>
+</section>
+<!-- About_Us_End -->
 
-    
-      <div class="relative isolate px-6 pt-14 lg:px-8">
-        <div
-          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true">
-          <div
-            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-        </div>
-        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div class="text-center">
-            <h1
-              class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Visecure!
-              Secure Your Digital Life
-            </h1>
-            <p class="mt-6 text-lg leading-8 text-white">Empowering Digital Fortresses: Safeguarding Your Digital Existence Through Cybersecurity and Blockchain Innovations.</p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#contact_us"
-                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Join
-                Now</a>
-              <a href="#"
-                class="text-sm font-semibold leading-6 text-white">Learn more
-                <span aria-hidden="true">→</span></a>
+
+<!-- SERVICES -->
+<section id="services" class="S_container">
+    <div class="service-wrapper">
+        <div class="service">
+            <div class="A_title">
+                <h4>Services <span>&</span> Products</h4>
             </div>
-          </div>
-        </div>
+            <div class="S_cards">
+                <div class="S_card">
+                    <i class="fas fa-shield"></i>
+                    <h2>Cybersecurity Products & Solutions</h2>
+                    <p>Discover advanced cybersecurity solutions to fortify digital defenses, safeguarding data, networks, and systems.</p>
+                </div>
 
-        <!-- About_US -->
-        <div
-          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true">
-          <div
-            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-        </div>
-      </div>
-    </div>
-    <div
-    id="about"
-      class="overflow-hidden bg-white py-24 sm:py-32 border-t-2 border-zinc-500/50">
-      <p class="text-center text-4xl font-bold mb-10 -mt-20">About US</p>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div
-          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div class="lg:pr-8 lg:pt-4">
-            <div class="lg:max-w-lg space-y-16">
-              <div>
-                <p
-                  class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Trust
-                  Visecure for Your Digital Safety</p>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Visecure
-                  prioritizes empowering users with essential tools for safe
-                  digital navigation. Our expert team crafts state-of-the-art
-                  security solutions, blending advanced threat detection with
-                  user-friendly features. Trust us to safeguard your digital
-                  journey with confidence.</p>
-              </div>
-              <div>
-                <p
-                  class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Empowering
-                  Digital Guardians</p>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Forge ahead with
-                  confidence. Our advanced security solutions guarantee seamless
-                  protection, empowering you to navigate the digital realm
-                  fearlessly. Your safety, our priority.</p>
-              </div>
+                <div class="S_card">
+                    <i class="fas fa-database"></i>
+                    <h2>Decentralized Data Storage And Management</h2>
+                    <p>Embrace decentralized solutions for data management. Securely store and manage data across distributed networks, ensuring privacy.</p>
+                </div>
+
+                <div class="S_card">
+                    <i class="fas fa-lock"></i>
+                    <h2>Cybersecurity Services</h2>
+                    <p>Take control of calls with our spam blocker and caller ID. Filter out unwanted calls and identify unknown numbers.</p>
+                </div>
+
+                <div class="S_card">
+                    <i class="fas fa-user-secret"></i>
+                    <h2>Vulnerability Assessment and Penetration Testing</h2>
+                    <p>Shield systems with vulnerability assessments and penetration testing. Identify and remediate weaknesses preemptively.</p>
+                </div>
+
+                <div class="S_card">
+                    <i class="fas fa-users-cog"></i>
+                    <h2>Managed Security Services (MSS)</h2>
+                    <p>Trust our Managed Security Services (MSS) as your virtual security team for continuous monitoring, threat detection, and response.
+                    </p>
+                </div>
+
+                <div class="S_card">
+                    <i class="fas fa-cogs"></i>
+                    <h2>Digital Solutions & Services</h2>
+                    <p>Empower your digital journey with comprehensive solutions, covering web development, digital marketing, and more. We've got you covered.</p>
+                </div>
+
             </div>
-          </div>
-          <img
-            src="https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041848.jpg?t=st=1709516216~exp=1709519816~hmac=e68b072f791b551988400fd62bf04ea8899ec254cfce3ac82e45910ed357338e&w=740"
-            alt="Product screenshot"
-            class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            width="2432" height="1442">
         </div>
-      </div>
     </div>
+</section>
+<!-- SERVICES_END -->
 
-    <!-- About_US_End -->
+<!-- Contact_Us -->
+<section id="contact_us" class="contact_us_main">
 
-      <div
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true">
-        <div
-          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-      </div>
-    </div>
-  </div>
-  <div
-  id="prod"
-    class="overflow-hidden bg-white py-24 sm:py-32 lg:flex-col border-t-2 border-zinc-500/50">
-    <p class="text-center text-4xl font-bold mb-10 -mt-20">PRODUCT</p>
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 lg:flex-col">
-      <div
-        class="sm:gap-y-20 lg:mx-0 lg:max-w-none lg: grid-cols-1 md:grid-cols-1">
-        <div class="flex flex-col lg:flex-row md:px-10 sm:px-10 sm:flex-col lg:pr-8 lg:pt-4 justify-center items-center">
-          <div class="lg:max-w-lg space-y-16">
-              <p
-                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Visecure Mobile Security App</p>
-              <p class="mt-6 text-lg leading-8 text-gray-600">Visecure
-                prioritizes empowering users with essential tools for safe
-                digital navigation. Our expert team crafts state-of-the-art
-                security solutions, blending advanced threat detection with
-                user-friendly features. Trust us to safeguard your digital
-                journey with confidence.</p>
-          </div>
-          <div>
-            <img
-            src="61341.png"
-            alt="Product screenshot"
-            class="w-[28rem] sm:w-[37rem] md:-ml-4 lg:-ml-0"
-            width="2432" height="1442">
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-white py-24 sm:py-32" id="serv">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:text-center">
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">SERVICES</p>
-      </div>
-      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <i class="fa-solid fa-shield text-white"></i>
-              </div>
-              Cybersecurity Products & Solutions
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Explore cutting-edge cybersecurity products and comprehensive solutions tailored to fortify your digital defenses. Safeguard your data, networks, and systems with innovative security technologies.</dd>
-          </div>
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <i class="fa-solid fa-database text-white"></i>
-              </div>
-              Decentralized Data Storage And Management
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Embrace the future of data management with decentralized solutions. Securely store and manage your data across distributed networks, ensuring privacy, integrity, and accessibility.</dd>
-          </div>
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <i class="fa-solid fa-lock text-white"></i>
-              </div>
-              Cybersecurity Services 
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Unlock top-tier cybersecurity services designed to protect your organization against evolving threats. Benefit from proactive monitoring, incident response, and strategic security consulting</dd>
-          </div>
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <i class="fas fa-check-circle fa-lg text-white"></i>
-              </div>
-              Vulnerability Assessment and Penetration Testing 
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Shield your systems with thorough vulnerability assessments and penetration testing. Identify and remediate potential weaknesses before malicious actors exploit them.</dd>
-          </div>
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <i class="fa-solid fa-user-shield text-white"></i>
-              </div>
-              Managed Security Services (MSS)
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Trust in our Managed Security Services (MSS) to serve as your virtual security team. Receive continuous monitoring, threat detection, and response to safeguard your digital assets.</dd>
-          </div>
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                <i class="fa-solid fa-cogs text-white"></i>
-              </div>
-              Digital Solutions & Services 
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">Empower your digital journey with comprehensive Digital Solutions. From web development to digital marketing, we've got you covered.</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>
-  <section id="contact_us" class="contact_us_main">
-
-    <div class="contactUs" id="cont">
-        <div class="C_title text-black">
-            <h4>Contact US</h4>
+    <div class="contactUs">
+        <div class="C_title">
+            <h4>Contact</h4>
         </div>
 
         <div class="box">
@@ -293,35 +162,39 @@
             <!-- Form -->
             <div class="contact C_form">
                 <h3>Send a Message</h3>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="bc0644a7-98c2-4e83-bc37-15f82b879bc5">
+                <form action="">
                     <div class="formBox">
                         <div class="row50">
                             <div class="inputBox C_field">
                                 <span>First Name</span>
-                                <input required name="First_Name" class="C_item" type="text" placeholder="Jhon">
+                                <input class="C_item" type="text" placeholder="Jhon">
+                                <div class="error-txt">First Name can't be blank</div>
                             </div>
                             <div class="inputBox C_field">
                                 <span>Last Name</span>
-                                <input required name="Last_Name" class="C_item" type="text" placeholder="Doe">
+                                <input class="C_item" type="text" placeholder="Doe">
+                                <div class="error-txt">First Name can't be blank</div>
                             </div>
                         </div>
 
                         <div class="row50">
                             <div class="inputBox C_field">
                                 <span>Email</span>
-                                <input required name="Email" class="C_item" type="text" placeholder="Jhondoe@gmail.com">
+                                <input class="C_item" type="text" placeholder="Jhondoe@gmail.com">
+                                <div class="error-txt">First Name can't be blank</div>
                             </div>
                             <div class="inputBox C_field">
                                 <span>Mobile</span>
-                                <input required name="Mobile" class="C_item" type="text" placeholder="+91 987 654 3210">
+                                <input class="C_item" type="text" placeholder="+91 987 654 3210">
+                                <div class="error-txt">First Name can't be blank</div>
                             </div>
                         </div>
 
                         <div class="row100">
-                            <div class="inputBox C_field ">
+                            <div class="inputBox C_field">
                                 <span>Message</span>
-                                <textarea required name="Message" class="C_item" placeholder="Write your message here..."></textarea>
+                                <textarea class="C_item" placeholder="Write your message here..."></textarea>
+                                <div class="error-txt">First Name can't be blank</div>
                             </div>
                         </div>
 
@@ -340,17 +213,17 @@
                 <h3>Contact info</h3>
                 <div class="infoBox">
                     <div>
-                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span><ion-icon name="location"></ion-icon></span>
                         <p>Istart KIOT Campus Salem, <br> Tamil Nadu 637 504<br>INDIA</p>
                     </div>
 
                     <div>
-                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <a href="mailto:visecurepvt@gmail.com">visecurepvt@gmail.com</a>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:loremipsum@gmail.com">visecurepvt@gmail.com</a>
                     </div>
 
                     <div>
-                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span><ion-icon name="call"></ion-icon></span>
                         <a href="tel:+919876543210">+91 9159106082</a>
                     </div>
 
@@ -372,5 +245,11 @@
     </div>
 
 </section>
-  </body>
+
+<!-- Contact_US_End -->
+
+</body>
+<script src="/script.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </html>
