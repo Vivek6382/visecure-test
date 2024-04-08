@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visecure - Secure Your Digital Life With Visecure</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -162,17 +162,18 @@
             <!-- Form -->
             <div class="contact C_form">
                 <h3>Send a Message</h3>
-                <form action="">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="bc0644a7-98c2-4e83-bc37-15f82b879bc5">
                     <div class="formBox">
                         <div class="row50">
                             <div class="inputBox C_field">
                                 <span>First Name</span>
-                                <input class="C_item" type="text" placeholder="Jhon">
+                                <input name="First_Name" class="C_item" type="text" placeholder="Jhon">
                                 <div class="error-txt">First Name can't be blank</div>
                             </div>
                             <div class="inputBox C_field">
                                 <span>Last Name</span>
-                                <input class="C_item" type="text" placeholder="Doe">
+                                <input  name="Last_Name" class="C_item" type="text" placeholder="Doe">
                                 <div class="error-txt">First Name can't be blank</div>
                             </div>
                         </div>
@@ -180,12 +181,12 @@
                         <div class="row50">
                             <div class="inputBox C_field">
                                 <span>Email</span>
-                                <input class="C_item" type="text" placeholder="Jhondoe@gmail.com">
+                                <input name="Email" class="C_item" type="text" placeholder="Jhondoe@gmail.com">
                                 <div class="error-txt">First Name can't be blank</div>
                             </div>
                             <div class="inputBox C_field">
                                 <span>Mobile</span>
-                                <input class="C_item" type="text" placeholder="+91 987 654 3210">
+                                <input  name="Mobile"  class="C_item" type="text" placeholder="+91 987 654 3210">
                                 <div class="error-txt">First Name can't be blank</div>
                             </div>
                         </div>
@@ -193,7 +194,7 @@
                         <div class="row100">
                             <div class="inputBox C_field">
                                 <span>Message</span>
-                                <textarea class="C_item" placeholder="Write your message here..."></textarea>
+                                <textarea name="Message" class="C_item" placeholder="Write your message here..."></textarea>
                                 <div class="error-txt">First Name can't be blank</div>
                             </div>
                         </div>
@@ -219,12 +220,12 @@
 
                     <div>
                         <span><ion-icon name="mail"></ion-icon></span>
-                        <a href="mailto:loremipsum@gmail.com">visecurepvt@gmail.com</a>
+                        <a href="mailto:visecurepvt@gmail.com">visecurepvt@gmail.com</a>
                     </div>
 
                     <div>
                         <span><ion-icon name="call"></ion-icon></span>
-                        <a href="tel:+919876543210">+91 9159106082</a>
+                        <a href="tel:+919159106082">+91 9159106082</a>
                     </div>
 
                     <!-- Social_Media_Links -->
