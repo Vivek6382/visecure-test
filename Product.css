@@ -1101,4 +1101,6 @@ body {
     .S_card p {
         font-size: 0.9rem;
     }
+    container-1,container-2{
+        background-color:"#191a2b";
 }
