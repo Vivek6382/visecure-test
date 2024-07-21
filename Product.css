@@ -509,6 +509,11 @@ nav.scrolled {
     position: relative;
     margin-left: 2vh;
   }
+  .Vi-logo{
+    top: 100px;
+    position: relative;
+    display: block;
+  }
 }
 
 .separator {
