@@ -526,7 +526,7 @@ nav.scrolled {
         left: 0; /* Center on smaller screens */
         width: 100%;
     }
-    .container,.main3,.service{
+    .main3,.service{
         overflow-x: hidden;
     }
 }
