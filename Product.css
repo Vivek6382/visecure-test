@@ -713,6 +713,17 @@ nav.scrolled {
     position: relative;
     margin-left: 10;
 }
+.btn{
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    color: #000080;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Days one,sans-serif;
+    position: relative;
+}
 /* Services_End */
 /* Contact_US */
 
