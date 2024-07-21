@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visecure - Secure Your Digital Life </title>
-    <link rel="stylesheet" href="Product.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -36,12 +35,6 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
-/* Navigation bar */
-.navbar-nav, .navbar-brand, .nav-link, .dropdown-item, .btn-book-now {
-    font-family: 'Days One', sans-serif;
-}
-
 
 /* Navigation bar */
 .header-1 {
@@ -423,6 +416,10 @@ nav.scrolled {
     width: 150px;
     cursor: pointer;
 }
+
+/* Nav_Bar_Design_End */
+
+/* BREAKPOINTS */
 @media (max-width: 992px){
     .header-1{
         padding: 1.3rem 5%;
@@ -679,6 +676,10 @@ nav.scrolled {
     .A_title h4 span{
         display: block;
         text-align: center;
+    }
+    .image-2{
+        position: relative;
+        top:0vh;
     }
 }
 .explore-button-10,.explore-button-11,.explore-button-12,.explore-button-13 {
@@ -1011,7 +1012,7 @@ nav.scrolled {
         <nav class="navbar">
 
             <div class="NB">
-            <a href="../Home-page/index.html" class="active link" style="--i:0;">Home</a>
+            <a href="index.html" class="active link" style="--i:0;">Home</a>
             <a href="Product.html" class="link" style="--i:3;">Products</a>
             <a href="services.html" class="link" style="--i:3;">Services</a>
             <a href="contact.html" class="link" style="--i:4;">Contact Us</a>
@@ -1026,10 +1027,11 @@ nav.scrolled {
 <!-- Responsive_Nav_Bar_End -->
 <nav class="box-container fliud" style="background-color: #000050; color: whitesmoke; text-align: center; margin-top:10vh;">
     <div class="container" style="padding-top: 20px;">
-        <h1 style=" font-family: 'Days One', sans-serif; letter-spacing: 1px; font-size: 2.2rem;"><b>Visecure Essentials </b></h1>
+        <h1 style=" font-family: 'Days One', sans-serif; letter-spacing: 1px; font-size: 2.2rem;"><b>End-Point Protection</b></h1>
     </div>
     <div>
-        <p style="margin-top: 30px; font-size: 0.8rem; margin-left: 20px;">Protect critical areas of your business with this collection of essential modules for endpoints, email, and cloud apps.</p>
+        <p style="margin-top: 30px; font-size: 0.8rem; margin-left: 20px;">Advanced endpoint detection and response (EDR), next-gen antivirus (NGAV), data governance, WiFi phishing protection,<br>and
+            centralized control of device posture - all on one, easy-to-use security platform. Plus, our MDR team can back you up!</p>
     </div>
     <div class="text-center" style="padding-bottom:70px; margin-top: 50px;">
         <button class="btn" onclick="location.href='book.html'" style="background-color:  rgba(25, 99, 185, 100%); color: whitesmoke; height: 40px; width: 100px; border-radius: 5px; border-color: rgba(25, 99, 185, 100%);font-family: 'Days One', sans-serif;"><b>Get Now</b></button>
@@ -1042,47 +1044,54 @@ nav.scrolled {
             <div class="S_cards">
                 <div class="S_card">
                     <i class="fas fa-shield-alt"></i>
-                    <h2></h2>
+                    <h2>Device Posture</h2>
                     <p class="container-text" style="color: whitesmoke; font-size: large;">
-                    Apply device posture policies to users or<br>
-                    groups and determine the remediation<br>
-                    action for vulnerabilities
+                        Apply device posture policies to users or<br>
+                        groups and determine the remediation<br>
+                        action for vulnerabilities
+                    </p>
                 </div>
 
                 <div class="S_card">
                     <i class="fas fa-envelope"></i>
-                    <p class="container-text" style="color: whitesmoke; font-size: large;">Identify and quarantine emails with<br>
-                    potential malware or ransomware
-                    attachments </p>
+                    <h2>Endpoint Detection & Response</h2>
+                    <p class="container-text" style="color: whitesmoke; font-size: large;">
+                        Identify and quarantine emails with<br>
+                        potential malware or ransomware<br>
+                        attachments
+                    </p>
                 </div>
 
                 <div class="S_card">
                     <i class="fas fa-user-shield"></i>
+                    <h2>Endpoint Data Governance</h2>
                     <p class="container-text" style="color: whitesmoke; font-size: large;">
-                        Stop abnormal admin activity, access
-                    violations, ID compromise, malware
-                    and mass data changes in cloud apps
-                </div>
-                <div class="S_card">
-                    <i class="fas fa-file"></i>
-                    <p class="container-text" style="color: whitesmoke; font-size: large;">
-                        Create lists of files, folders, and processes
-                        allow or block, protecting your endpoints
-                        from known threats and vulnerabilities
+                        Stop abnormal admin activity, access<br>
+                        violations, ID compromise, malware,<br>
+                        and mass data changes in cloud apps
                     </p>
                 </div>
                 <div class="S_card">
-                    <i class="fas fa-user-secret"></i>
+                    <i class="fas fa-file"></i>
+                    <h2>Allow/Block List</h2>
                     <p class="container-text" style="color: whitesmoke; font-size: large;">
-                        Prevent threats from domain impersonation
-                        spoofing, and other misleading phishing
-                        attempts
+                        Create lists of files, folders, and processes<br>
+                        allow or block, protecting your endpoints
+                        from known threats and vulnerabilities</p>
+                </div>
+                <div class="S_card">
+                    <i class="fas fa-user-secret"></i>
+                    <h2>wifi Phishing</h2>
+                    <p class="container-text" style="color: whitesmoke; font-size: large;">
+                        Prevent threats from domain impersonation,<br>
+                        spoofing, and other misleading phishing attempts
                     </p>
                 </div>
                 <div class="S_card">
                     <i class='bx bx-shield'></i>
+                    <h2>Next-gen Antivirus</h2>
                     <p class="container-text" style="color: whitesmoke; font-size: large;">
-                        Advanced threat protection (ATP) analyzes
+                        Advanced threat protection (ATP) analyzes<br>
                         both static files and running processes for
                         anomalies and suspicious behavior
                     </p>
