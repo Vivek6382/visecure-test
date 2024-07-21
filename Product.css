@@ -1020,12 +1020,13 @@ nav.scrolled {
 
 }
 @media (max-width: 768px) {
-    .image-2{
+    .image-2 {
         position: relative;
         display: block;
-        top:0vh;
-        width: 100%;
-        height: 40vh;
+        width: 100%; /* Ensure image takes full width */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 0; /* Adjust margin if necessary */
     }
 }
+
 /* Contact_US_End */
