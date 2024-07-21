@@ -145,9 +145,6 @@
         margin: 1.5rem 0;
         text-align: center;
     }
-    .b{
-        font-size: 0.7rem;
-    }
 
 
 }
@@ -496,7 +493,7 @@ nav.scrolled {
     display: flex;
 }
 @media (max-width: 768px) {
-  .table-1, .img-1{
+  .table-1, img{
     display: flex;
     flex-direction:column;
     height: 30vh;
@@ -525,9 +522,6 @@ nav.scrolled {
     .separator {
         left: 0; /* Center on smaller screens */
         width: 100%;
-    }
-    .main3,.service{
-        overflow-x: hidden;
     }
 }
 /* Header ends */
