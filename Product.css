@@ -504,10 +504,15 @@ nav.scrolled {
     margin-top: 30vh;
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
   }
   .text-10.text-20{
     position: relative;
-    margin-left: 2vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .Vi-logo{
     top: 80px;
@@ -575,10 +580,6 @@ nav.scrolled {
         position: relative;
         top:60vh;
     }
-    .btn{
-        position: relative;
-        left:110px;
-    }
     .image-footer-1{
         height: 80px;
         width: 170px;
@@ -587,7 +588,6 @@ nav.scrolled {
         position: relative;
         display: block;
         top:vh;
-        right: 18.33vh;
     }
     .image-2{
         position: relative;
@@ -729,7 +729,7 @@ nav.scrolled {
     /* border: 1px solid purple; */
 }
 
-.C_title h4{
+.C_title h1{
     display: inline-block;
     padding: 20px;
     color: #fff;
@@ -744,7 +744,7 @@ nav.scrolled {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     word-wrap: break-word;
     margin-top: 4.5%;
-    margin-left: 37%;
+    margin-left: 39%;
 }
 
 /* .contactUs .title{
@@ -913,7 +913,7 @@ nav.scrolled {
     min-width: 40px;
     height: 40px;
     color: #fff;
-    background: #18b7ff;
+    background: #0ef;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1054,12 +1054,12 @@ body {
     border-color: #00ff37;
 }
 .S_card i {
-    color: #72e2ae;
+    color:#0ef;
     margin-bottom: 20px;
     font-size: 3rem;
 }
 .S_card h2 {
-    color: rgb(29, 177, 29);
+    color: #0ef;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -1068,8 +1068,8 @@ body {
     margin-bottom: 20px;
 }
 .explore-button-10, .explore-button-11, .explore-button-12, .explore-button-13 {
-    background-color: rgb(29, 177, 29);
-    color: white;
+    background-color: #0ef;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -1101,6 +1101,60 @@ body {
     .S_card p {
         font-size: 0.9rem;
     }
-    container-1,container-2{
+    .container-1,.container-2{
         background-color:"#191a2b";
+}
+}
+
+/* Services */
+
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid lawngreen; */
+}
+
+.S_container h1{
+    color: #fff ;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4,52,83);
+    background: linear-gradient(8deg,rgba(8, 52, 83, 1) 0%, rgba(0,230,173,1) 41%,  rgba(41,17,45,1) 100%);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+@keyframes anim{
+    95%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        left: 88%;
+    }
+}
+h1{
+    color: #fff ;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4,52,83);
+    background: linear-gradient(8deg,rgba(8, 52, 83, 1) 0%, rgba(0,230,173,1) 41%,  rgba(41,17,45,1) 100%);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+@media screen and (max-width:768px) {
+    .i{
+        margin-right: 40px;
+        display:block;
+        position: relative;
+    }
 }
