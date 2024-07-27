@@ -504,15 +504,10 @@ nav.scrolled {
     margin-top: 30vh;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    text-align: center;
     margin-right: 20px;
   }
   .text-10.text-20{
     position: relative;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
   }
   .Vi-logo{
     top: 80px;
