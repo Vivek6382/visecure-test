@@ -876,7 +876,7 @@ body {
     top: -100%;
 }
 .S_card i{
-    color: #72e2ae;
+    color: #0ef;
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 4.8rem;
@@ -904,7 +904,7 @@ body {
 }
 
 .S_card:hover i{
-    color: #00ff37;
+    color: #0ef;
 }
 
 @media screen and  (max-width:1200px) {
@@ -1129,7 +1129,7 @@ body {
     min-width: 40px;
     height: 40px;
     color: #fff;
-    background: #18b7ff;
+    background: #0ef;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1185,7 +1185,7 @@ body {
 @media (max-width: 991px){
     
     body{
-        background: #03a9f5;
+        background: #0ef;
     }
 
     .C_title{
@@ -1230,3 +1230,15 @@ body {
 
 }
 /* Contact_US_End */
+h4{
+    color: #fff ;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4,52,83);
+    background: linear-gradient(8deg,rgba(8, 52, 83, 1) 0%, rgba(0,230,173,1) 41%,  rgba(41,17,45,1) 100%);
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
